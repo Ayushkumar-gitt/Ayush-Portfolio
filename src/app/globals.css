@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --lando-lime: #cbfb45;
+  --lando-grey: #1c1c1c;
+  --lando-light-grey: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-lando-lime: var(--lando-lime);
+  --color-lando-grey: var(--lando-grey);
+  --color-lando-light-grey: var(--lando-light-grey);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-roboto-mono);
+  --font-display: var(--font-bebas-neue);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for better aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lando-light-grey);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lando-lime);
+}
+
+/* Text outline utility like on Lando's site */
+.text-outline {
+  -webkit-text-stroke: 1px var(--color-foreground);
+  color: transparent;
+}
+
+.text-outline-lime {
+  -webkit-text-stroke: 1px var(--color-lando-lime);
+  color: transparent;
+}
+
+@keyframes shimmer {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
