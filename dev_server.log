@@ -10,3 +10,6 @@
  GET / 200 in 685ms (next.js: 345ms, application-code: 341ms)
 [browser] GSAP target .hero-image not found. https://gsap.com (src/components/HeroSection.tsx:34:12)
  GET / 200 in 735ms (next.js: 116ms, application-code: 619ms)
+ GET / 200 in 254ms (next.js: 45ms, application-code: 209ms)
+ GET / 200 in 96ms (next.js: 8ms, application-code: 88ms)
+ GET / 200 in 107ms (next.js: 10ms, application-code: 97ms)

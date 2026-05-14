@@ -30,8 +30,8 @@ export default function HeroSection() {
         { y: 0, opacity: 1, duration: 1, delay: 1, ease: "power3.out" }
       );
 
-      // Floating animation for the hover card
-      gsap.to("#hover-card", {
+      // Floating animation for the outer container so it doesn't conflict with inline transform
+      gsap.to("#float-container", {
         y: -15,
         duration: 2,
         yoyo: true,
@@ -55,7 +55,8 @@ export default function HeroSection() {
 
       {/* Interactive Photo Reveal Element */}
       <div className="absolute right-10 md:right-32 top-1/2 -translate-y-1/2 z-20 w-[40vw] md:w-[25vw] max-w-[400px] aspect-[3/4] group" style={{ perspective: "1000px" }}>
-        <div className="w-full h-full relative transition-transform duration-700 ease-out cursor-crosshair" style={{ transformStyle: "preserve-3d" }} id="hover-card">
+        <div id="float-container" className="w-full h-full">
+          <div className="w-full h-full relative transition-transform duration-700 ease-out cursor-crosshair" style={{ transformStyle: "preserve-3d" }} id="hover-card">
 
           {/* Inject style for hover effect */}
           <style dangerouslySetInnerHTML={{__html: `
@@ -80,15 +81,16 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Back (Photo) */}
-          <div className="absolute w-full h-full bg-black overflow-hidden border border-lando-lime/30 shadow-[0_0_30px_rgba(204,255,0,0.15)]" style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}>
-            <img
-              src="/ayush_photo.jpg"
-              alt="Ayush Kumar"
-              className="w-full h-full object-cover object-top filter grayscale hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
-            />
-            <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
-              <p className="text-lando-lime font-mono text-xs tracking-widest uppercase">System Online</p>
+            {/* Back (Photo) */}
+            <div className="absolute w-full h-full bg-black overflow-hidden border border-lando-lime/30 shadow-[0_0_30px_rgba(204,255,0,0.15)]" style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}>
+              <img
+                src="/ayush_photo.jpg"
+                alt="Ayush Kumar"
+                className="w-full h-full object-cover object-top filter grayscale hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
+              />
+              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                <p className="text-lando-lime font-mono text-xs tracking-widest uppercase">System Online</p>
+              </div>
             </div>
           </div>
         </div>

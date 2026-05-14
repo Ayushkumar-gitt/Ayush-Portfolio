@@ -76,9 +76,9 @@ export default function ProjectsSection() {
     <section
       id="projects"
       ref={sectionRef}
-      className="relative h-screen bg-lando-grey overflow-hidden flex flex-col pt-32"
+      className="relative h-screen bg-lando-grey overflow-hidden flex flex-col pt-10 px-6 md:px-12"
     >
-      <div className="absolute top-10 left-6 md:left-12 z-20 pointer-events-none">
+      <div className="z-20 pointer-events-none shrink-0 mb-8 md:mb-16">
         <h2 className="projects-title font-display text-5xl md:text-8xl text-white uppercase tracking-tighter">
           ON <br />
           <span className="text-outline-lime">TRACK</span>
@@ -90,16 +90,16 @@ export default function ProjectsSection() {
 
       <div
         ref={containerRef}
-        className="flex h-full w-[300vw] items-end pb-20 md:pb-32 mt-16 md:mt-0 relative z-10"
+        className="flex flex-1 w-[300vw] items-center pb-10 md:pb-20 relative z-10"
       >
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project-panel w-screen h-[70vh] flex items-center px-6 md:px-32 flex-shrink-0 relative pt-20 md:pt-0"
+            className="project-panel w-screen h-full flex items-center md:px-20 lg:px-32 flex-shrink-0 relative"
           >
-            <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center justify-between mt-32 md:mt-0">
+            <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center justify-between pb-10">
 
-              <div className="w-full md:w-1/2 space-y-6 z-10 pl-0 md:pl-24 lg:pl-32 xl:pl-48">
+              <div className="w-full md:w-1/2 space-y-6 z-10">
                 <div className="inline-block px-3 py-1 border border-lando-lime text-lando-lime font-mono text-xs uppercase tracking-widest">
                   0{index + 1}
                 </div>
