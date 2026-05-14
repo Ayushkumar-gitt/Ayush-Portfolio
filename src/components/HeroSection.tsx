@@ -116,11 +116,11 @@ export default function HeroSection() {
             <span className="text-white font-medium">Web Developer</span> with strong foundations in Data Structures and Algorithms using Java. Skilled in building full-stack web applications using modern JavaScript frameworks, REST APIs, and databases. Currently learning Generative AI, backend systems, and scalable web architectures.
           </p>
 
-          <div className="mt-10 flex gap-4">
+          <div className="mt-10 flex gap-4 pointer-events-auto">
             <a href="#projects" className="px-8 py-4 bg-lando-lime text-black font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors duration-300">
               View Work
             </a>
-            <a href="#contact" className="px-8 py-4 border border-gray-700 text-white font-bold uppercase tracking-widest text-sm hover:border-white transition-colors duration-300">
+            <a href="#contact" className="px-8 py-4 border border-gray-700 text-white font-bold uppercase tracking-widest text-sm hover:border-white transition-colors duration-300 cursor-pointer">
               Contact Me
             </a>
           </div>
