@@ -30,8 +30,8 @@ export default function HeroSection() {
         { y: 0, opacity: 1, duration: 1, delay: 1, ease: "power3.out" }
       );
 
-      // Floating animation for image if present
-      gsap.to(".hero-image", {
+      // Floating animation for the hover card
+      gsap.to("#hover-card", {
         y: -15,
         duration: 2,
         yoyo: true,

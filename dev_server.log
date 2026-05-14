@@ -2,17 +2,10 @@
 > my-portfolio@0.1.0 dev
 > next dev
 
-⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
 ▲ Next.js 16.2.6 (Turbopack)
-- Local:         http://localhost:3001
-- Network:       http://192.168.0.2:3001
-✓ Ready in 562ms
-⨯ Another next dev server is already running.
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 1840ms
 
-- Local:        http://localhost:3000
-- PID:          67301
-- Dir:          /app
-- Log:          .next/dev/logs/next-development.log
-
-Run kill 67301 to stop it.
-[?25h
+ GET / 200 in 685ms (next.js: 345ms, application-code: 341ms)
+[browser] GSAP target .hero-image not found. https://gsap.com (src/components/HeroSection.tsx:34:12)
