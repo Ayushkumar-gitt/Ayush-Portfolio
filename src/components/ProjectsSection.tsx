@@ -90,7 +90,7 @@ export default function ProjectsSection() {
 
       <div
         ref={containerRef}
-        className="flex flex-1 w-[300vw] items-center pb-10 md:pb-20 relative z-10"
+        className="flex flex-1 w-[300vw] items-center pb-24 md:pb-48 relative z-10"
       >
         {projects.map((project, index) => (
           <div

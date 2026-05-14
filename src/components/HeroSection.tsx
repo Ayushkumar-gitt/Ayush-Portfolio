@@ -86,7 +86,7 @@ export default function HeroSection() {
               <img
                 src="/ayush_photo.jpg"
                 alt="Ayush Kumar"
-                className="w-full h-full object-cover object-top filter grayscale hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
+                className="w-full h-full object-cover object-top transition-all duration-700 scale-110 group-hover:scale-100"
               />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
                 <p className="text-lando-lime font-mono text-xs tracking-widest uppercase">System Online</p>
