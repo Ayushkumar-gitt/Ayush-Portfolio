@@ -107,7 +107,7 @@ export default function HeroSection() {
           </h1>
         </div>
         <div className="overflow-hidden">
-          <h1 className="hero-text font-display text-[22vw] md:text-[15vw] leading-[0.8] tracking-tighter text-outline uppercase pl-[5vw] mix-blend-difference relative z-30">
+          <h1 className="hero-text font-display text-[22vw] md:text-[15vw] leading-[0.8] tracking-tighter text-white uppercase pl-[5vw] mix-blend-difference relative z-30">
             Kumar
           </h1>
         </div>
